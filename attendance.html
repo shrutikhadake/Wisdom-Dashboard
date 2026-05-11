@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <div class="logo">
+        <h2>WISDOM</h2>
+        <h2>SPROUTS</h2>
+        <p>IT Training Hub</p>
+      </div>
+
+      <div class="profile-card">
+
+        <div class="profile-icon">
+          👤
+        </div>
+
+        <div>
+          <h3>Shruti Shekhar Khadake</h3>
+          <p>STUDENT</p>
+        </div>
+
+      </div>
+
+      
+<ul class="menu">
+
+  <li>
+    <a href="Dashboard.html">Dashboard</a>
+  </li>
+
+  <li>
+    <a href="assignment.html">My Assignments</a>
+  </li>
+
+  <li class="active">
+    <a href="attendance.html">My Attendance</a>
+  </li>
+
+  <li>
+    <a href="lectures.html">My Lectures</a>
+  </li>
+
+  <li>
+    <a href="jobcalls.html">Job Calls</a>
+  </li>
+
+  <li>
+    <a href="profile.html">Profile</a>
+  </li>
+
+  <li>
+    <a href="#">Logout</a>
+  </li>
+
+</ul>
+
+
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+      <!-- Navbar -->
+      <div class="navbar">
+        <span>🌐</span>
+        <span>☰</span>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+
+        <h1>My Attendance</h1>
+
+        <div class="card">
+
+          <!-- Top Buttons -->
+          <div class="top-section">
+
+
+ <div class="month-dropdown">
+
+  <button class="month-btn" id="selectedMonthBtn">
+    Jan 2026
+  </button>
+
+    <div class="month-grid" id="monthGrid">
+
+      <span class="month-item active-month" data-month="Jan">Jan</span>
+      <span class="month-item" data-month="Feb">Feb</span>
+      <span class="month-item" data-month="Mar">Mar</span>
+      <span class="month-item" data-month="Apr">Apr</span>
+
+      <span class="month-item" data-month="May">May</span>
+      <span class="month-item" data-month="Jun">Jun</span>
+      <span class="month-item" data-month="Jul">Jul</span>
+      <span class="month-item" data-month="Aug">Aug</span>
+
+      <span class="month-item" data-month="Sep">Sep</span>
+      <span class="month-item" data-month="Oct">Oct</span>
+      <span class="month-item" data-month="Nov">Nov</span>
+      <span class="month-item" data-month="Dec">Dec</span>
+
+    </div>
+
+</div>
+
+            <button class="add-btn">
+              Add Attendance
+            </button>
+
+          </div>
+
+          <!-- Table -->
+          <table>
+
+            <thead>
+
+              <tr>
+                <th>SR NO</th>
+                <th>DATE</th>
+                <th>STATUS</th>
+              </tr>
+
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>1</td>
+                <td>01 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>02 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>03 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td>04 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td>05 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>6</td>
+                <td>06 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>7</td>
+                <td>07 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>8</td>
+                <td>08 Jan 2026</td>
+                <td><span class="absent">ABSENT</span></td>
+              </tr>
+
+              <tr>
+                <td>9</td>
+                <td>09 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>12</td>
+                <td>12 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>13</td>
+                <td>13 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>14</td>
+                <td>14 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>16</td>
+                <td>16 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>19</td>
+                <td>19 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>20</td>
+                <td>20 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>21</td>
+                <td>21 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>22</td>
+                <td>22 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>23</td>
+                <td>23 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>27</td>
+                <td>27 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>28</td>
+                <td>28 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>29</td>
+                <td>29 Jan 2026</td>
+                <td><span class="absent">ABSENT</span></td>
+              </tr>
+
+              
+              <tr>
+                <td>30</td>
+                <td>30 Jan 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>31</td>
+                <td>2 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>32</td>
+                <td>3 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>33</td>
+                <td>4 Feb 2026</td>
+                <td><span class="absent">ABSENT</span></td>
+              </tr>
+              
+              <tr>
+                <td>34</td>
+                <td>5 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>35</td>
+                <td>6 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>36</td>
+                <td>9 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>37</td>
+                <td>10 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>38</td>
+                <td>11 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>39</td>
+                <td>12 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>40</td>
+                <td>13 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>41</td>
+                <td>16 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>42</td>
+                <td>17 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>43</td>
+                <td>18 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>44</td>
+                <td>20 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>45</td>
+                <td>23 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>46</td>
+                <td>24 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>47</td>
+                <td>25 Feb 2026</td>
+                <td><span class="absent">ABSENT</span></td>
+              </tr>
+              
+              <tr>
+                <td>48</td>
+                <td>26 Feb 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>49</td>
+                <td>2 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>50</td>
+                <td>4 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>51</td>
+                <td>5 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              
+              <tr>
+                <td>52</td>
+                <td>6 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>53</td>
+                <td>9 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>54</td>
+                <td>10 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>55</td>
+                <td>11 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>56</td>
+                <td>12 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>57</td>
+                <td>13 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>58</td>
+                <td>16 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>59</td>
+                <td>17 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>60</td>
+                <td>18 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>61</td>
+                <td>23 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>62</td>
+                <td>25 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>63</td>
+                <td>27 Mar 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>64</td>
+                <td>30 Mar 2026</td>
+                <td><span class="absent">ABSENT</span></td>
+              </tr>
+              
+              <tr>
+                <td>65</td>
+                <td>1 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>66</td>
+                <td>2 Apr 2026</td>
+                <td><span class="absent">ABSENT</span></td>
+              </tr>
+              
+              <tr>
+                <td>67</td>
+                <td>6 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>68</td>
+                <td>7 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>69</td>
+                <td>8 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>70</td>
+                <td>9 Apr 2026</td>
+                <td><span class="absent">ABSENT</span></td>
+              </tr>
+              
+              <tr>
+                <td>71</td>
+                <td>10 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>72</td>
+                <td>13 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>73</td>
+                <td>15 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>74</td>
+                <td>16 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              
+              <tr>
+                <td>75</td>
+                <td>17 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>76 </td>
+                <td>20 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>78</td>
+                <td>21 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>79</td>
+                <td>22 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>80</td>
+                <td>12 Jan 2026</td>
+                <td><span class="absent">ABSENT</span></td>
+              </tr>
+
+              
+              <tr>
+                <td>81</td>
+                <td>24 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>82</td>
+                <td>27 Apr 2026</td>
+                <td><span class="absent">ABSENT</span></td>
+              </tr>
+              
+              <tr>
+                <td>83</td>
+                <td>28 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>84</td>
+                <td>29 Apr 2026</td>
+                <td><span class="absent">ABSENT</span></td>
+              </tr>
+              
+              <tr>
+                <td>85</td>
+                <td>30 Apr 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>86</td>
+                <td>4 May 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>87</td>
+                <td>5 May 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>88</td>
+                <td>6 May 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>89</td>
+                <td>7 May 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>90</td>
+                <td>11 May 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>91</td>
+                <td>12 May 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+
+              <tr>
+                <td>92</td>
+                <td>13 May 2026</td>
+                <td><span class="online">Present</span></td>
+              </tr>
+              
+              <tr>
+                <td>93</td>
+                <td>14 May 2026</td>
+                <td><span class="absent">ABSENT</span></td>
+              </tr>
+
+
+            </tbody>
+
+          </table>
+
+          <!-- Pagination -->
+          <div class="pagination-container">
+
+            <div class="entries-box">
+
+              <select id="entries">
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+              </select>
+
+            </div>
+
+            <div class="pagination">
+
+              <button class="page-btn prev-btn">
+                ❮ Prev
+              </button>
+
+              <button class="page-btn active-page">
+                1
+              </button>
+
+              <button class="page-btn">
+                2
+              </button>
+
+              <button class="page-btn next-btn">
+                Next ❯
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+ <script>
+
+const monthBtn =
+document.getElementById("selectedMonthBtn");
+
+const monthGrid =
+document.getElementById("monthGrid");
+
+const monthItems =
+document.querySelectorAll(".month-item");
+
+const tbody =
+document.querySelector("tbody");
+
+const allRows =
+Array.from(tbody.querySelectorAll("tr"));
+
+const prevBtn =
+document.querySelector(".prev-btn");
+
+const nextBtn =
+document.querySelector(".next-btn");
+
+const pageBtns =
+document.querySelectorAll(".page-btn");
+
+const entriesSelect =
+document.getElementById("entries");
+
+let currentMonth = "Jan";
+
+let currentPage = 1;
+
+let rowsPerPage = 10;
+
+let filteredRows = [];
+
+
+// ======================
+// OPEN DROPDOWN
+// ======================
+
+monthBtn.onclick = function(){
+
+  if(monthGrid.style.display === "grid"){
+
+    monthGrid.style.display = "none";
+
+  }else{
+
+    monthGrid.style.display = "grid";
+
+  }
+
+};
+
+
+// ======================
+// MONTH CLICK
+// ======================
+
+monthItems.forEach(function(item){
+
+  item.onclick = function(){
+
+    currentMonth =
+    item.dataset.month;
+
+    monthBtn.innerText =
+    currentMonth + " 2026";
+
+    currentPage = 1;
+
+    monthGrid.style.display = "none";
+
+    filterRows();
+
+  };
+
+});
+
+
+// ======================
+// FILTER ROWS
+// ======================
+
+function filterRows(){
+
+  filteredRows =
+  allRows.filter(function(row){
+
+    const dateText =
+    row.cells[1].innerText;
+
+    return dateText.includes(currentMonth);
+
+  });
+
+  displayRows();
+
+}
+
+
+// ======================
+// DISPLAY ROWS
+// ======================
+
+function displayRows(){
+
+  tbody.innerHTML = "";
+
+  const start =
+  (currentPage - 1) * rowsPerPage;
+
+  const end =
+  start + rowsPerPage;
+
+  const rowsToShow =
+  filteredRows.slice(start, end);
+
+  rowsToShow.forEach(function(row){
+
+    tbody.appendChild(row);
+
+  });
+
+}
+
+
+// ======================
+// NEXT BUTTON
+// ======================
+
+nextBtn.onclick = function(){
+
+  const totalPages =
+  Math.ceil(filteredRows.length / rowsPerPage);
+
+  if(currentPage < totalPages){
+
+    currentPage++;
+
+    displayRows();
+
+  }
+
+};
+
+
+// ======================
+// PREV BUTTON
+// ======================
+
+prevBtn.onclick = function(){
+
+  if(currentPage > 1){
+
+    currentPage--;
+
+    displayRows();
+
+  }
+
+};
+
+
+// ======================
+// PAGE BUTTONS
+// ======================
+
+pageBtns[1].onclick = function(){
+
+  currentPage = 1;
+
+  displayRows();
+
+};
+
+pageBtns[2].onclick = function(){
+
+  currentPage = 2;
+
+  displayRows();
+
+};
+
+
+// ======================
+// ENTRIES SELECT
+// ======================
+
+entriesSelect.onchange = function(){
+
+  rowsPerPage =
+  parseInt(this.value);
+
+  currentPage = 1;
+
+  displayRows();
+
+};
+
+
+// ======================
+// INITIAL LOAD
+// ======================
+
+filterRows();
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+
+</body>
+
+</html>
