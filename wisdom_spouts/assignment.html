@@ -1,0 +1,390 @@
+
+<!-- assignments.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Assignments</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="assignments-page">
+
+  <div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+      <div class="logo">
+
+        <h2>WISDOM</h2>
+        <h2>SPROUTS</h2>
+
+        <p>IT Training Hub</p>
+
+      </div>
+
+      <!-- PROFILE -->
+
+      <div class="profile-card">
+
+        <div class="profile-icon">
+          👤
+        </div>
+
+        <div>
+
+          <h3>Shruti Shekhar Khadake</h3>
+
+          <p>STUDENT</p>
+
+        </div>
+
+      </div>
+
+      <!-- MENU -->
+
+      <ul class="menu">
+
+        <li>
+          <a href="Dashboard.html">Dashboard</a>
+        </li>
+
+        <li class="active">
+          <a href="assignment.html">My Assignments</a>
+        </li>
+
+        <li>
+          <a href="attendance.html">My Attendance</a>
+        </li>
+
+        <li>
+          <a href="lectures.html">My Lectures</a>
+        </li>
+
+        <li>
+          <a href="jobcalls.html">Job Calls</a>
+        </li>
+
+        <li>
+          <a href="profile.html">Profile</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <!-- MAIN -->
+
+    <div class="main">
+
+      <!-- NAVBAR -->
+
+      <div class="navbar">
+
+        <span>🌐</span>
+
+        <span>☰</span>
+
+      </div>
+
+      <!-- CONTENT -->
+
+      <div class="content">
+
+        <h1>My Assignments</h1>
+
+        <div class="card">
+
+          <!-- SEARCH -->
+
+          <div class="search-box">
+
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search assignments..."
+            >
+
+          </div>
+
+          <!-- TABLE -->
+
+          <table>
+
+            <thead>
+
+              <tr>
+
+                <th>SR NO</th>
+
+                <th>ASSIGNMENT NAME</th>
+
+                <th>START DATE</th>
+
+                <th>END DATE</th>
+
+                <th>STATUS</th>
+
+                <th>SUBMISSION DATE</th>
+
+              </tr>
+
+            </thead>
+
+            <tbody id="assignmentTable">
+
+  <tr onclick="showAssignment(1)">
+    <td>1</td>
+    <td>Build Fullstack App</td>
+    <td>2026-04-23</td>
+    <td>2026-04-27</td>
+    <td><span class="pending">PENDING</span></td>
+    <td>-</td>
+  </tr>
+
+  <tr onclick="showAssignment(2)">
+    <td>2</td>
+    <td>Create Mini Project in React</td>
+    <td>2026-03-25</td>
+    <td>2026-03-26</td>
+    <td><span class="pending">PENDING</span></td>
+    <td> -</td>
+  </tr>
+
+  <tr onclick="showAssignment(3)">
+  <td>3</td>
+  <td>React Js Task</td>
+  <td>2026-03-20</td>
+  <td>2026-03-23</td>
+  <td><span class="Submitted">SUBMITTED</span></td>
+  <td>2026-01-19</td>
+</tr>
+
+  <tr onclick="showAssignment(4)">
+    <td>4</td>
+    <td>Create a website</td>
+    <td>2026-03-17</td>
+    <td>2026-03-18</td>
+    <td><span class="Submitted">SUBMITTED</span></td>
+    <td>2026-03-18</td>
+  </tr>
+
+  <tr onclick="showAssignment(5)">
+    <td>5</td>
+    <td>Js Test - Submission</td>
+    <td>2026-03-17</td>
+    <td>2026-03-18</td>
+    <td><span class="Submitted">SUBMITTED</span></td>
+    <td>2026-03-18</td>
+  </tr>
+
+  <tr onclick="showAssignment(6)">
+    <td>6</td>
+    <td>Create Ecommerce Page</td>
+    <td>2026-03-09</td>
+    <td>2026-03-10</td>
+    <td><span class="Submitted">SUBMITTED</span></td>
+    <td>2026-03-10</td>
+  </tr>
+
+  <tr onclick="showAssignment(7)">
+    <td>7</td>
+    <td>Natural Icecream Clone</td>
+    <td>2026-03-06</td>
+    <td>2026-03-10</td>
+    <td><span class="Submitted">SUBMITTED</span></td>
+    <td>2026-03-10</td>
+  </tr>
+
+  <tr onclick="showAssignment(8)">
+    <td>8</td>
+    <td>Create portfolio clone</td>
+    <td>2026-02-03</td>
+    <td>2026-02-03</td>
+    <td><span class="Submitted">SUBMITTED</span></td>
+    <td>2026-02-03</td>
+  </tr>
+
+  <tr onclick="showAssignment(9)">
+    <td>9</td>
+    <td>Create Bootstrap Portfolio</td>
+    <td>2026-02-02</td>
+    <td>2026-02-03</td>
+    <td><span class="Submitted">SUBMITTED</span></td>
+    <td>2026-02-03</td>
+  </tr>
+
+  <tr onclick="showAssignment(10)">
+    <td>10</td>
+    <td>Create a Website in html css</td>
+    <td>2026-01-15</td>
+    <td>2026-01-19</td>
+    <td><span class="Submitted">SUBMITTED</span></td>
+    <td>2026-01-19</td>
+
+    <tr onclick="showAssignment(11)">
+    <td>11</td>
+    <td>Create basic Webpage</td>
+    <td>2026-01-13</td>
+    <td>2026-01-15</td>
+    <td><span class="Submitted">SUBMITTED</span></td>
+    <td>2026-01-15</td>
+  </tr>
+
+  <tr onclick="showAssignment(12)">
+    <td>12</td>
+    <td>Tribute Page in HTML</td>
+    <td>2026-01-07</td>
+    <td>2026-01-13</td>
+    <td><span class="Submitted">SUBMITTED </span></td>
+    <td>2026-01-13</td>
+  </tr>
+
+
+</tbody>
+
+          </table>
+
+          <div id="assignmentDetails" class="details-card" style="display:none;">
+
+  <h2>Assignment Details</h2>
+
+  <div class="detail-header">
+
+    <h3 id="detailTitle"></h3>
+
+    <button class="submitted-btn">Submitted</button>
+
+  </div>
+
+  <p id="detailDescription"></p>
+
+  <div class="detail-info">
+
+    <p><strong>Start Date:</strong> <span id="detailStart"></span></p>
+
+    <p><strong>End Date:</strong> <span id="detailEnd"></span></p>
+
+    <p><strong>Status:</strong> <span id="detailStatus"></span></p>
+
+    <p><strong>Submission Method:</strong> LINK</p>
+
+  </div>
+
+</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+<script>
+if (document.body.classList.contains("assignments-page")) {
+
+  const assignments = {
+
+    1: {
+      title: "Build Fullstack App",
+      description: "Build a web app...",
+      start: "23 Apr 2026",
+      end: "27 Apr 2026",
+      status: "ACTIVE"
+    },
+
+    2: {
+      title: "Create Mini Project in React",
+      description: "Create a mini project in react js with props.",
+      start: "25 Mar 2026",
+      end: "26 Mar 2026",
+      status: "ACTIVE"
+    },
+
+    3: {
+      title: "React JS Task",
+      description: "Build Student Profile Card App...",
+      start: "20 Mar 2026",
+      end: "23 Mar 2026",
+      status: "ACTIVE"
+    }
+
+  };
+
+  // SHOW DETAILS
+
+  window.showAssignment = function(id) {
+
+    const assignment = assignments[id];
+
+    document.getElementById("assignmentDetails").style.display = "block";
+
+    document.getElementById("detailTitle").innerText =
+      assignment.title;
+
+    document.getElementById("detailDescription").innerText =
+      assignment.description;
+
+    document.getElementById("detailStart").innerText =
+      assignment.start;
+
+    document.getElementById("detailEnd").innerText =
+      assignment.end;
+
+    document.getElementById("detailStatus").innerText =
+      assignment.status;
+  };
+
+  // SEARCH
+
+  const assignmentSearch =
+    document.getElementById("searchInput");
+
+  const rows =
+    document.querySelectorAll("#assignmentTable tr");
+
+  assignmentSearch.addEventListener("keyup", () => {
+
+    const value =
+      assignmentSearch.value.toLowerCase();
+
+    rows.forEach(row => {
+
+      const text =
+        row.innerText.toLowerCase();
+
+      if (text.includes(value)) {
+
+        row.style.display = "";
+
+      } else {
+
+        row.style.display = "none";
+
+      }
+
+    });
+
+  });
+
+}
+</script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
